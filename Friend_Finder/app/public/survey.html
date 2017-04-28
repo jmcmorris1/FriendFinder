@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>PreTinder-Survey Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-panel yellow darken-1 col s12 center-align">
+            <h2><strong>Survey Questions</strong></h2>
+            <div class="card-panel left-align white">
+                <hr>
+                <h3><strong>About You</strong></h3>
+                <br>
+                <h4><strong>Name (Required)</strong></h4>
+                <input type="text" name id="name" class="form-control" required>
+                <h4><strong>Link to Photo Image (Required)</strong></h4>
+                <input type="text" name id="photo" class="form-control" required>
+                <hr>
+                <h2><strong><i>Know Yourself</i></strong></h2>
+                <hr>
+                <h3><strong>Question 1</strong></h3>
+                <hr>
+                <h4>How important is it for you to make physical contact when showing affection for someone?</h4>
+                <select data-placeholder="Know Yourself" class="browser-default" id="q1">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 Very important.</option>
+                    <option value="2">2 Somewhat important.</option>
+                    <option value="3">3 Not important.</option>
+                </select>
+                <h3><strong>Question 2</strong></h3>
+                <hr>
+                <h4>If your girlfriend/boyfriend became overweight, would that be a dealbreaker?</h4>
+                <select data-placeholder="Know Yourself" class="browser-default" id="q2">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 Yes, even if they were slightly overweight.</option>
+                    <option value="2">2 Yes, but only if they were obese.</option>
+                    <option value="3">3 No.</option>
+                    <option value="4">4 No, in fact I prefer overweight people.</option>
+                </select>
+                <h3><strong>Question 3</strong></h3>
+                <hr>
+                <h4>If someone offered you a million dollars to sleep with your significant other, would you take the money?</h4>
+                <select data-placeholder="Know Yourself" class="browser-default" id="q3">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 Yes.</option>
+                    <option value="2">2 Yes.
+                        <option>
+                            <option value="3">3 Yes.</option>
+                            <option value="4">4 No, but I would strongly consider it.</option>
+                </select>
+                <h3><strong>Question 4</strong></h3>
+                <hr>
+                <h4>Choose one:</h4>
+                <select data-placeholder="Know Yourself" class="browser-default" id="q4">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 J.Cole</option>
+                    <option value="2">2 Kendrick Lamar</option>
+                    <option value="3">3 Drake</option>
+                    <option value="4">4 Big Sean</option>
+                    <option value="5">5 Soulja Boy</option>
+                </select>
+                <h3><strong>Question 5</strong></h3>
+                <hr>
+                <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+                <select data-placeholder="Know Yourself" class="browser-default" id="q5">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (I don't know)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h3><strong>Question 6</strong></h3>
+                <hr>
+                <h4>Which of these options most closely describes what you're looking for in your next relationship?</h4>
+                <select data-placeholder="Know Yourself" class="browser-default" id="q6">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 Someone to come home to.</option>
+                    <option value="2">2 Someone to go out with.</option>
+                    <option value="3">3 Someone for tonight.</option>
+                </select>
+                <h3><strong>Question 7</strong></h3>
+                <hr>
+                <h4>Would you consider having an open relationship, where you can see other people?</h4>
+                <select data-placeholder="Know Yourself" class="browser-default" id="q7">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 Yes.</option>
+                    <option value="2">2 No.</option>
+                    <option value="3">3 Only if we're both cool about it.</option>
+                </select>
+                <h3><strong>Question 8</strong></h3>
+                <hr>
+                <h4>If you were in a serious relationship and you learned that your partner cheated on you one drunken night, could you forgive him/her?</h4>
+                <select data-placeholder="Know Yourself" class="browser-default" id="q8">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 Yes, if he/she was sincerely sorry.</option>
+                    <option value="2">2 No, never.</option>
+                    <option value="3">3 It depends on the situation.</option>
+                    <option value="4">4 I don't believe in monogomy.</option>
+                </select>
+                <h3><strong>Question 9</strong></h3>
+                <hr>
+                <h4>You get married. Five years later, you realize it was a mistake. You just don't love your partner anymore but he/she still loves you. You decide to:</h4>
+                <select data-placeholder="Know Yourself" class="browser-default" id="q9">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 Keep trying. Marriage means commitment.</option>
+                    <option value="2">2 Get a divorce. It'll be better for both of you.</option>
+                </select>
+                <h3><strong>Question 10</strong></h3>
+                <hr>
+                <h4>Most of all, I want to meet someone who deserves my:</h4>
+                <select data-placeholder="Know Yourself" class="browser-default" id="q10">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 trust</option>
+                    <option value="2">2 loyalty</option>
+                    <option value="3">3 admiration</option>
+                    <option value="4">4 gratitude</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <button type="submit" data-target="modal" class="waves-effect waves-light btn modal-trigger cyan lighten-1" id="submitBtn">Submit</button>
+            </div>
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Meet Your PreTinder Friender</h4>
+                <h5 id="matchName"></h5>
+                <img id="matchPic" src="" alt="No Image" width=2 50px>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+    
+    $(document).ready(function() {
+        $("#submitBtn").on("click", function() {
+            function validateForm() {
+                var isValid = true;
+                $('.validate').each(function() {
+                    if ($(this).val() === '') {
+                        isValid = false;
+                    }
+                });
+                $('.browser-default').each(function() {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+            //if everything is filled, creates a new friend from the submitted values
+            if (validateForm() == true) {    
+                var newFriend = {
+                    name: $('#name').val().trim(),
+                    profilePic: $('#photo').val().trim(),
+                    scores: [
+                        $('#q1').val(),
+                        $('#q2').val(),
+                        $('#q3').val(),
+                        $('#q4').val(),
+                        $('#q5').val(),
+                        $('#q6').val(),
+                        $('#q7').val(),
+                        $('#q8').val(),
+                        $('#q9').val(),
+                        $('#q10').val(),
+                    ]
+                };
+                //Gets current URL of website
+                var currentURL = window.location.origin;
+                //AJAX posts the data to friends API.
+                $.post(currentURL + "/api/friends", newFriend, function(data) {
+                    //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#matchName").text(data.name);
+                    $("#matchPic").attr("src", data.profilePic);
+                });
+                // Show the modal with the best match
+                $('.modal').modal();
+                //clear form after submission
+                $('#name').val("");
+                $('#photo').val("");
+                $('#q1').val("");
+                $('#q2').val("");
+                $('#q3').val("");
+                $('#q4').val("");
+                $('#q5').val("");
+                $('#q6').val("");
+                $('#q7').val("");
+                $('#q8').val("");
+                $('#q9').val("");
+                $('#q10').val("");
+            } else {
+                alert("Finish all questions before submitting survey!")
+            }
+            // return false;
+        });
+    });
+    </script>
+</body>
+
+</html>
