@@ -179,11 +179,11 @@
                         $('#q10').val(),
                     ]
                 };
-                //Gets current URL of website
+                //Gets current URL 
                 var currentURL = window.location.origin;
-                //AJAX posts the data to friends API.
+                //AJAX posts the data to API.
                 $.post(currentURL + "/api/friends", newFriend, function(data) {
-                    //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    //Grab the result from the AJAX post so the best match's name and photo are displayed.
                     $("#matchName").text(data.name);
                     $("#matchPic").attr("src", data.profilePic);
                 });
